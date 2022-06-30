@@ -1,29 +1,49 @@
-set nocompatible
-set termguicolors
+set number relativenumber
+syntax enable
+set noswapfile
+set scrolloff=7
+set backspace=indent,eol,start
+set clipboard=unnamed
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set fileformat=unix
+set background=dark
 
-call plug#begin()
-	Plug 'flazz/vim-colorschemes'
-	Plug 'preservim/nerdtree'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'sheerun/vim-polyglot'
-	Plug 'davidhalter/jedi-vim'
-	Plug 'deoplete-plugins/deoplete-jedi'
-	Plug 'sainnhe/gruvbox-material'
-	Plug 'ntpeters/vigrim-better-whitespace'
+call plug#begin('~/.vim/plugged')
+  Plug 'morhetz/gruvbox'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'preservim/nerdtree'
+  Plug 'preservim/nerdcommenter'
+  Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'deoplete-plugins/deoplete-jedi'
+  Plug 'davidhalter/jedi-vim'
 call plug#end()
 
-let g:better_whitespace_enabled=0
-let g:strip_whitespace_on_save=0
-let g:airline_theme='minimalist'
-
-syntax on
 colorscheme gruvbox
-set nu
-:set cursorline
+let g:airline_theme='gruvbox'
 
-" key remapings
+if (has("termguicolors"))
+      set termguicolors
+endif
 
-map <C-n> :NERDTreeToggle<CR>
-nnoremap <C-j> :tabprevious<CR>
-nnoremap <C-k> :tabnext<CR>
+" NERDCommenter
+filetype plugin on 
+nmap <C-_> <Plug>NERDCommenterToggle
+vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
+
+ " NERDTree
+let NERDTreeQuitOnOpen=1
+let g:NERDTreeMinimalUI=1
+nmap <C-n> :NERDTreeToggle<CR>
+
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemode=':t'
+
+let mapleader = ' '
+nmap <leader>1 :bp<CR>
+nmap <leader>2 :bn<CR>
+nmap <C-w> :bd<CR>
