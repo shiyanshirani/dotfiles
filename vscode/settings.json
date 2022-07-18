@@ -46,5 +46,4 @@
   "bracketPairColorizer.depreciation-notice": false,
   // "workbench.editor.tabCloseButton": "on",
   // 3PARTY SETTINGS
-  "sourcery.token": "user_uTG8x2ge85u3CmwFWP241wIilpdGCm_1CDzIapN15xwWHmVpdkS0ndfm1Zw", // false: removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
 }
