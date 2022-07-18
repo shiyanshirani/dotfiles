@@ -1,0 +1,50 @@
+{
+  "editor.fontSize": 12.5,
+  "editor.cursorWidth": 2,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "expand",
+  "editor.suggestSelection": "first",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.renderCharacters": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.fontFamily": "'Operator Mono', 'JetBrains Mono'",
+  "editor.tokenColorCustomizations": {
+    "comments": "#566573",
+    "textMateRules": [
+      {
+        "scope": [
+          "entity.name.function",
+          "entity.name.method",
+          "entity.name.class"
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "workbench.editor.showTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.activityBar.visible": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth",
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#242424",
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "python.languageServer": "Pylance",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "security.workspace.trust.untrustedFiles": "open",
+  "bracketPairColorizer.depreciation-notice": false,
+  // "workbench.editor.tabCloseButton": "on",
+  // 3PARTY SETTINGS
+  "sourcery.token": "user_uTG8x2ge85u3CmwFWP241wIilpdGCm_1CDzIapN15xwWHmVpdkS0ndfm1Zw", // false: removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+}
