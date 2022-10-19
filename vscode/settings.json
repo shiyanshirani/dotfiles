@@ -1,10 +1,9 @@
 {
-  "editor.fontSize": 12.5,
+  "editor.fontSize": 13.5,
   "editor.cursorWidth": 2,
-  "editor.formatOnSave": true,
   "editor.fontLigatures": false,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.cursorStyle": "line",
   "editor.lineNumbers": "relative",
   "editor.cursorBlinking": "expand",
@@ -13,6 +12,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.fontFamily": "'Operator Mono', 'JetBrains Mono'",
+  
   "editor.tokenColorCustomizations": {
     "comments": "#566573",
     "textMateRules": [
@@ -29,13 +29,17 @@
     ]
   },
   "workbench.editor.showTabs": true,
-  "workbench.editor.enablePreview": false,
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth",
+  "workbench.colorTheme": "Monochrome Dark",
   "workbench.colorCustomizations": {
-    "sideBar.background": "#242424",
+    // "sideBar.background": "#242424",
+    "editor.selectionBackground": "#ff99ff", //Current SELECTED text
+    "editor.selectionHighlightBackground":"ff99ff",
+    "editor.selectionHighlightBackground": "#ff99ff", //same content as the selection
+    "editor.findMatchBackground": "#000000a8", //Current SEARCH MATCH
+    "editor.findMatchHighlightBackground": "#ff7b00a1" //Other SEARCH MATCHES
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -44,6 +48,67 @@
   "python.defaultInterpreterPath": "/usr/bin/python3",
   "security.workspace.trust.untrustedFiles": "open",
   "bracketPairColorizer.depreciation-notice": false,
+  "editor.defaultFormatter": "ms-python.black-formatter",                               // Black formatter
+  "editor.formatOnSave": true,                                                          // Format on save           
   // "workbench.editor.tabCloseButton": "on",
+  
   // 3PARTY SETTINGS
+
+  "workbench.editor.enablePreview": false,
+  "python.formatting.provider": "black",
+  "black-formatter.args": [
+    "--line-length=79"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "python": false
+  }, // false: removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+
+  
+  
+  
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.icons": false,
+  "editor.colorDecorators": false,
+  // "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
+  "editor.find.addExtraSpaceOnTop": false,
+  // "editor.fontFamily": "'IBM Plex Mono', monospace",
+  // "editor.fontSize": 14,
+  "editor.links": false,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "none",
+  "editor.roundedSelection": false,
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.vertical": "visible",
+  "editor.selectionHighlight": false,
+  "editor.showFoldingControls": "always",
+  "terminal.integrated.fontFamily": "'IBM Plex Mono', monospace",
+  "terminal.integrated.fontWeight": "300",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": null,
+  "workbench.tree.indent": 14,
+  "vim.easymotion": true,
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#999999",
+    "editor.selectionBackground": "#656565", // Current SELECTED text
+    "editor.selectionHighlightBackground":"ff99ff",
+    "editor.selectionHighlightBackground": "#ff99ff", // Same content as the selection
+  },
+  "files.exclude": {
+    "**/.trunk/*out": true
+  },
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  "files.watcherExclude": {
+    "**/.trunk/*out": true
+  },
+  // "workbench.editor.labelFormat": "short",
+  "breadcrumbs.enabled": true
 }
