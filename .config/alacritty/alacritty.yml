@@ -1,1 +1,109 @@
-/Users/shiyan/.config/alacritty/alacritty.yml
+window:
+  dynamic_title: true
+  dimensions:
+    columns: 0
+    lines: 0
+
+  position:
+    x: 0
+    y: 0
+
+  padding:
+    x: 10
+    y: 10
+  
+  opacity: 1
+
+  dynamic_padding: false
+  decorations: none
+
+selection:
+  save_to_clipboard: true
+
+scrolling:
+  history: 50000
+  multiplier: 3
+
+font:
+  size: 13
+  normal:
+    family: SF Mono
+    style: Regular
+
+  bold:
+    family: SF Mono
+    style: Regular
+
+TERM: xterm-256color
+
+draw_bold_text_with_bright_colors: false
+
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
+key_bindings:
+   # Create a new tmux window
+  - { key: T, mods: Command, chars: "\x0e\x63" }
+    # Rename tmux window 
+  - { key: Comma, mods: Command, chars: "\x0e\x2c" }
+    # Toggle the zoom state of the current tmux pane
+  - { key: Z, mods: Command, chars: "\x0e\x7a" }
+    # Toggle between windows
+  - { key: LBracket, mods: Command, chars: "\x0e\x70" }
+  - { key: RBracket, mods: Command, chars: "\x0e\x6e" }
+
+  - { key: NumpadSubtract, mods: Command, chars: "\x0e\x2d" }
+    # Key remaps
+  - { key: Key0, mods: Command, chars: "\x0e\x30" }
+  - { key: Key1, mods: Command, chars: "\x0e\x31" }
+  - { key: Key2, mods: Command, chars: "\x0e\x32" }
+  - { key: Key3, mods: Command, chars: "\x0e\x33" }
+  - { key: Key4, mods: Command, chars: "\x0e\x34" }
+  - { key: Key5, mods: Command, chars: "\x0e\x35" }
+  - { key: Key6, mods: Command, chars: "\x0e\x36" }
+  - { key: Key7, mods: Command, chars: "\x0e\x37" }
+  - { key: Key8, mods: Command, chars: "\x0e\x38" }
+  - { key: Key9, mods: Command, chars: "\x0e\x39" }
+
+monochrome_purp: &monochrome_purp
+  primary:
+    background: '#080808'
+    foreground: '#C0BEBE'
+
+  cursor:
+    cursor: '#FF00FF'
+    text:   '#C0BEBE'
+
+  normal:
+    black:   '#000000'
+    red:     '#ff2e88'
+    green:   '#7FFF00'
+    yellow:  '#FFFF66'
+    blue:    '#00BFFF'
+    magenta: '#FF00FF'
+    cyan:    '#00FFFF'
+    white:   '#FFFAFA'
+
+  bright:
+    black:   '#000000'
+    red:     '#ff2e88'
+    green:   '#7FFF00'
+    yellow:  '#FFFF33'
+    blue:    '#0000FF'
+    magenta: '#FF00FF'
+    cyan:    '#00FFFF'
+    white:   '#FFFAFA'
+  
+  selection:
+    background: '#FFFFFF'
+    text:       '#000000'
+
+
+
+colors: *monochrome_purp
+
+live_config_reload: true
+
