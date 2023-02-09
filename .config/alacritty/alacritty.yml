@@ -54,7 +54,6 @@ key_bindings:
     # Toggle between windows
   - { key: LBracket, mods: Command, chars: "\x0e\x70" }
   - { key: RBracket, mods: Command, chars: "\x0e\x6e" }
-
   - { key: NumpadSubtract, mods: Command, chars: "\x0e\x2d" }
     # Key remaps
   - { key: Key0, mods: Command, chars: "\x0e\x30" }
@@ -100,8 +99,6 @@ monochrome_purp: &monochrome_purp
   selection:
     background: '#FFFFFF'
     text:       '#000000'
-
-
 
 colors: *monochrome_purp
 

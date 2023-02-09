@@ -18,3 +18,7 @@ shift + alt + ctrl - l : yabai -m window --warp east
 
 # toggle window fullscreen zoom
 alt - f : yabai -m window --toggle zoom-fullscreen
+
+# open alacritty
+cmd - return : open -a alacritty
+
