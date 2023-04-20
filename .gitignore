@@ -1,3 +1,5 @@
 *.DS_Store
 # .config/alacritty/colorschemes
 **/colorschemes
+.config/nvim/plugin/packer_compiled.lua
+

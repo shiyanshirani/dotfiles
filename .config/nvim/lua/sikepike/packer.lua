@@ -38,13 +38,19 @@ return require('packer').startup(function(use)
 	}
 	use 'averms/black-nvim' 				 -- Black (in-place formatter)
 	use 'nvim-telescope/telescope-file-browser.nvim' -- Telescope file browser
-	use 'kylechui/nvim-surround'
 	use {
 		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		-- requires = { 'kyazdani49/nvim-web-devicons', opt = true }
 	}
-	use 'matze/vim-move'
-	use 'tpope/vim-sleuth'
 	use 'mhartington/formatter.nvim'
 	use 'sbdchd/neoformat'
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end
+	})
 end)

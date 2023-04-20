@@ -11,12 +11,6 @@ setopt autocd       # cd into directories without 'cd'
 
 export PATH=/usr/local/sbin:$PATH
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Pipenv WARNING: LANG not set
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -41,3 +35,9 @@ zstyle ':vcs_info:git:*' formats '%b'
 setopt PROMPT_SUBST
 RPROMPT=\$vcs_info_msg_0_
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
