@@ -18,7 +18,7 @@ shift + alt + ctrl - l : yabai -m window --warp east
 
 # toggle window fullscreen zoom
 alt - f : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m query --windows --space | jq '.[].id' | xargs -I{} yabai -m window {} --toggle zoom-fullscreen
 
 # open alacritty
 cmd - return : open -a alacritty
-

@@ -17,7 +17,7 @@ export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
 # alias
-alias ll="ls -l"
+alias ll="ls -al"
 alias la="ls -a"
 alias pes="pipenv shell"
 alias p="python3"
@@ -38,6 +38,7 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+CLOUDSDK_PYTHON='/usr/local/bin/python3.10'
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
