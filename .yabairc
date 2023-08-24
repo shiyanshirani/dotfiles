@@ -64,3 +64,5 @@ yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WPS Office$" manage=off
 yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^Weather$" manage=off
+yabai -m rule --add app="^Installer$" manage=off
+yabai -m rule --add app="^Reminders$" manage=off

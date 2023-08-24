@@ -38,7 +38,7 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-CLOUDSDK_PYTHON='/usr/local/bin/python3.10'
+CLOUDSDK_PYTHON="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10"
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shiyan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
