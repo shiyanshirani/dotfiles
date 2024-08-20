@@ -66,3 +66,6 @@ yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^Weather$" manage=off
 yabai -m rule --add app="^Installer$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
+yabai -m rule --add app="^Stickies$" manage=off
+yabai -m rule --add app="^Screen Sharing$" manage=off
