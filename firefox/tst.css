@@ -1,54 +1,150 @@
-:root     { background-color: #101010; }
-#tabbar   { border-color: #DA70D6; bottom: 18px !important; }
+:root {
+	background-color: #101010;
+}
 
-.tab.pinned                                         { margin-top: 1px; background-image: none !important; }
-.tab.pinned.last-row                                { border-bottom-width: 1px; }
-.tab.pinned.contextual-identity-marker              { height: 3px; }
-.tab:not(.pinned) .contextual-identity-marker       { width: 5px !important; }
+#tabbar {
+	border-color: #DA70D6;
+	bottom: 18px !important;
+}
 
-.tab:not(:hover) .closebox   { display: none; }
+.tab.pinned {
+	margin-top: 1px;
+	background-image: none !important;
+}
 
-.tab                         { background-color: #323234; color: #DA70D6; border-color: #101010; }
-.tab:hover                   { background-color: #505060 !important; color: #FFFFFF !important; }
+.tab.pinned.last-row {
+	border-bottom-width: 1px;
+}
 
-.tab.discarded               { background-color: #202020; color: #606060 !important; }
-.tab.discarded:hover         { background-color: #343444!important; }
+.tab.pinned.contextual-identity-marker {
+	height: 3px;
+}
 
-.tab.active                  { background-color: #DA70D6; }
-.tab.active:hover            { background-color: #DA70D6 !important; }
+.tab:not(.pinned) .contextual-identity-marker {
+	width: 5px !important;
+}
 
-.tab.private-browsing              { background-color: #504050; }
-.tab.private-browsing.active       { background-color: #706070; }
-.tab.private-browsing:hover        { background-color: #7050A0 !important; }
-.tab.private-browsing.active:hover { background-color: #9060B0 !important; }
+.tab:not(:hover) .closebox {
+	display: none;
+}
 
-.after-tabs button           { background-color: #323234; color: #808080; border-color: #101010; }
-.after-tabs button:hover     { background-color: #505060 !important; color: #FFFFFF !important; }
+.tab {
+	background-color: #323234;
+	color: #DA70D6;
+	border-color: #101010;
+}
+
+.tab:hover {
+	background-color: #505060 !important;
+	color: #FFFFFF !important;
+}
+
+.tab.discarded {
+	background-color: #202020;
+	color: #606060 !important;
+}
+
+.tab.discarded:hover {
+	background-color: #343444 !important;
+}
+
+.tab.active {
+	background-color: #DA70D6;
+}
+
+.tab.active:hover {
+	background-color: #DA70D6 !important;
+}
+
+.tab.private-browsing {
+	background-color: #504050;
+}
+
+.tab.private-browsing.active {
+	background-color: #706070;
+}
+
+.tab.private-browsing:hover {
+	background-color: #7050A0 !important;
+}
+
+.tab.private-browsing.active:hover {
+	background-color: #9060B0 !important;
+}
+
+.after-tabs button {
+	background-color: #323234;
+	color: #808080;
+	border-color: #101010;
+}
+
+.after-tabs button:hover {
+	background-color: #505060 !important;
+	color: #FFFFFF !important;
+}
 
 
 tab-item.unread .label-content {
-  font-style: italic;
+	font-style: italic;
 }
 
 tab-item.active tab-item-substance {
-  height: 30px !important;
+	height: 30px !important;
 }
+
 tab-item.active .background {
-  background-color: magenta;
+	background-color: magenta;
 }
+
 tab-item.active .label-content {
-  font-weight: regular;
-  font-size: 12px;
+	font-weight: regular;
+	font-size: 12px;
 }
+
 tab-item.active tab-twisty,
 tab-item.active .label-content,
 tab-item.active tab-counter {
-  color: #fff;
+	color: #fff;
 }
 
 .newtab-button-box {
-  display: none;
+	display: none;
 }
+
 #tabbar {
-  bottom: 0 !important; /* Eliminate dead space on bottom */
+	bottom: 0 !important;
+	/* Eliminate dead space on bottom */
+}
+
+
+
+
+/* 27 November 2024 */
+
+
+
+tab-item.unread .label-content {
+	font-style: italic;
+}
+
+tab-item.active .background {
+	background-color: magenta;
+}
+
+tab-item {
+	font-family
+}
+
+.newtab-button-box {
+	display: none;
+}
+
+#tabbar {
+	bottom: 0 !important;
+	/* Eliminate dead space on bottom */
+}
+
+/* "#tabbar" is required for TST 3.4.0 and later! */
+#tabbar tab-item tab-item-substance:not(:hover) tab-closebox {
+	display: none;
 }
