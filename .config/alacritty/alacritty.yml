@@ -25,16 +25,19 @@ scrolling:
   multiplier: 3
 
 font:
-  size: 13
+  size: 13.5
   normal:
     family: SF Mono
-    style: Regular
+    #family: JetBrains Mono
+
+    # style: Regular
 
   bold:
     family: SF Mono
     style: Regular
 
-TERM: xterm-256color
+env:
+  TERM: xterm-256color
 
 draw_bold_text_with_bright_colors: false
 
@@ -45,16 +48,13 @@ mouse:
     modifiers: Command
 
 key_bindings:
-   # Create a new tmux window
-  - { key: T, mods: Command, chars: "\x0e\x63" }
-    # Rename tmux window 
-  - { key: Comma, mods: Command, chars: "\x0e\x2c" }
-    # Toggle the zoom state of the current tmux pane
-  - { key: Z, mods: Command, chars: "\x0e\x7a" }
-    # Toggle between windows
-  - { key: LBracket, mods: Command, chars: "\x0e\x70" }
-  - { key: RBracket, mods: Command, chars: "\x0e\x6e" }
+  - { key: T, mods: Command, chars: "\x0e\x63" }          # Create a new tmux window
+  - { key: Comma, mods: Command, chars: "\x0e\x2c" }      # Rename tmux window 
+  - { key: Z, mods: Command, chars: "\x0e\x7a" }          # Toggle the zoom state of the current tmux pane
+  - { key: LBracket, mods: Command, chars: "\x0e\x70" }   # Toggle between windows
+  - { key: RBracket, mods: Command, chars: "\x0e\x6e" }   # Toggle between windows
   - { key: NumpadSubtract, mods: Command, chars: "\x0e\x2d" }
+
     # Key remaps
   - { key: Key0, mods: Command, chars: "\x0e\x30" }
   - { key: Key1, mods: Command, chars: "\x0e\x31" }
@@ -65,42 +65,72 @@ key_bindings:
   - { key: Key6, mods: Command, chars: "\x0e\x36" }
   - { key: Key7, mods: Command, chars: "\x0e\x37" }
   - { key: Key8, mods: Command, chars: "\x0e\x38" }
-  - { key: Key9, mods: Command, chars: "\x0e\x39" }
+  - { key: Key9, mods: Command, chars: "\x0e\x68" }
 
-monochrome_purp: &monochrome_purp
+# monochrome_purp: &monochrome_purp
+#   primary:
+#     background: '#080808'
+#     foreground: '#C0BEBE'
+
+#   cursor:
+#     cursor: '#FF00FF'
+#     text:   '#C0BEBE'
+
+#   normal:
+#     black:   '#000000'
+#     red:     '#ff2e88'
+#     green:   '#7FFF00'
+#     yellow:  '#FFFF66'
+#     blue:    '#00BFFF'
+#     magenta: '#FF00FF'
+#     cyan:    '#00FFFF'
+#     white:   '#FFFAFA'
+
+#   bright:
+#     black:   '#000000'
+#     red:     '#ff2e88'
+#     green:   '#7FFF00'
+#     yellow:  '#FFFF33'
+#     blue:    '#0000FF'
+#     magenta: '#FF00FF'
+#     cyan:    '#00FFFF'
+#     white:   '#FFFAFA'
+  
+#   selection:
+#     background: '#FFFFFF'
+#     text:       '#000000'
+# (Github Light Tritanopia) Colors for Alacritty
+
+# Colors (Paper Theme)
+colors:
+  # Default colors
   primary:
-    background: '#080808'
-    foreground: '#C0BEBE'
+    background: '#F2EEDE'
+    foreground: '#000000'
 
-  cursor:
-    cursor: '#FF00FF'
-    text:   '#C0BEBE'
-
+  # Normal colors
   normal:
     black:   '#000000'
-    red:     '#ff2e88'
-    green:   '#7FFF00'
-    yellow:  '#FFFF66'
-    blue:    '#00BFFF'
-    magenta: '#FF00FF'
-    cyan:    '#00FFFF'
-    white:   '#FFFAFA'
+    red:     '#CC3E28'
+    green:   '#216609'
+    yellow:  '#B58900'
+    blue:    '#1E6FCC'
+    magenta: '#5C21A5'
+    cyan:    '#158C86'
+    white:   '#AAAAAA'
 
+  # Bright colors
   bright:
-    black:   '#000000'
-    red:     '#ff2e88'
-    green:   '#7FFF00'
-    yellow:  '#FFFF33'
-    blue:    '#0000FF'
-    magenta: '#FF00FF'
-    cyan:    '#00FFFF'
-    white:   '#FFFAFA'
-  
-  selection:
-    background: '#FFFFFF'
-    text:       '#000000'
+    black:   '#555555'
+    red:     '#CC3E28'
+    green:   '#216609'
+    yellow:  '#B58900'
+    blue:    '#1E6FCC'
+    magenta: '#5C21A5'
+    cyan:    '#158C86'
+    white:   '#AAAAAA'
 
-colors: *monochrome_purp
+# colors: *monochrome_purp
 
 live_config_reload: true
 
