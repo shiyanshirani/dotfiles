@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?/init.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1727870382/lib/lua/5.1/?.so"
+local package_path_str = "/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?/init.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?.lua;/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/shiyan/.cache/nvim/packer_hererocks/2.1.1753364724/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bloop.nvim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/bloop.nvim",
+    url = "https://github.com/nocksock/bloop.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -99,17 +104,36 @@ _G.packer_plugins = {
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["conform.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fconform\frequire\0" },
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/conform.nvim",
     url = "https://github.com/stevearc/conform.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
+  ["darkvoid.nvim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/darkvoid.nvim",
+    url = "https://github.com/aliqyan-21/darkvoid.nvim"
+  },
   ["deepwhite.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme deepwhite\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/deepwhite.nvim",
     url = "https://github.com/Verf/deepwhite.nvim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -131,6 +155,11 @@ _G.packer_plugins = {
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   ["mason-conform.nvim"] = {
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/mason-conform.nvim",
@@ -151,16 +180,31 @@ _G.packer_plugins = {
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
     url = "https://github.com/kdheepak/monochrome.nvim"
   },
+  ["monoglow.nvim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/monoglow.nvim",
+    url = "https://github.com/wnkz/monoglow.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["noirblaze-vim"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/noirblaze-vim",
+    url = "https://github.com/n1ghtmare/noirblaze-vim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
+    url = "https://github.com/akinsho/nvim-bufferline.lua"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -199,7 +243,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["poimandres.nvim"] = {
-    config = { "\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15poimandres\frequire\0" },
+    config = { "\27LJ\2\n¢\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\29disable_float_background\1\20disable_italics\1\20bold_vert_split\1\22dim_nc_background\1\23disable_background\1\nsetup\15poimandres\frequire\0" },
     loaded = true,
     path = "/Users/shiyan/.local/share/nvim/site/pack/packer/start/poimandres.nvim",
     url = "https://github.com/olivercederborg/poimandres.nvim"
@@ -242,26 +286,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: poimandres.nvim
-time([[Config for poimandres.nvim]], true)
-try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15poimandres\frequire\0", "config", "poimandres.nvim")
-time([[Config for poimandres.nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
--- Config for: deepwhite.nvim
-time([[Config for deepwhite.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme deepwhite\bcmd\bvim\0", "config", "deepwhite.nvim")
-time([[Config for deepwhite.nvim]], false)
 -- Config for: conform.nvim
 time([[Config for conform.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fconform\frequire\0", "config", "conform.nvim")
 time([[Config for conform.nvim]], false)
+-- Config for: poimandres.nvim
+time([[Config for poimandres.nvim]], true)
+try_loadstring("\27LJ\2\n¢\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\5\29disable_float_background\1\20disable_italics\1\20bold_vert_split\1\22dim_nc_background\1\23disable_background\1\nsetup\15poimandres\frequire\0", "config", "poimandres.nvim")
+time([[Config for poimandres.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

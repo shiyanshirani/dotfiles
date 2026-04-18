@@ -1,0 +1,195 @@
+# Alacritty Configuration File
+# General terminal settings
+
+[general]
+live_config_reload = true  # Automatically reload config when file changes
+
+# Environment variables
+[env]
+TERM = "xterm-256color"  # Terminal type for proper color support
+
+# Font configuration
+[font]
+size = 13.5  # Base font size
+
+[font.bold]
+family = "SF Mono"  # Font family for bold text
+style = "Regular"   # Use regular weight for bold (prevents double-bolding)
+
+[font.normal]
+family = "SF Mono"  # Font family for normal text
+
+# Scrollback and scrolling behavior
+[scrolling]
+history = 100000     # Number of lines to keep in scrollback buffer
+multiplier = 3       # Scroll speed multiplier
+
+# Text selection behavior
+[selection]
+save_to_clipboard = true  # Automatically copy selection to clipboard
+
+# Window appearance and behavior
+[window]
+decorations = "none"      # Remove window decorations (titlebar, borders)
+dynamic_padding = false   # Keep padding constant when resizing
+dynamic_title = true      # Allow applications to set window title
+opacity = 1               # Window opacity (1 = fully opaque)
+
+[window.dimensions]
+columns = 0  # Initial window width in columns (0 = default)
+lines = 0    # Initial window height in lines (0 = default)
+
+[window.padding]
+x = 10  # Horizontal padding in pixels
+y = 10  # Vertical padding in pixels
+
+[window.position]
+x = 0  # Initial window x position
+y = 0  # Initial window y position
+
+# Keyboard shortcuts
+# These bindings send control sequences to tmux (prefix: Ctrl+E)
+[[keyboard.bindings]]
+chars = "\u000Ec"          # Send Ctrl+E then 'c'
+key = "T"                  # Triggered by Command+T
+mods = "Command"           # New tmux window
+
+[[keyboard.bindings]]
+chars = "\u000E,"          # Send Ctrl+E then ','
+key = "Comma"              # Triggered by Command+,
+mods = "Command"           # Tmux command prompt
+
+[[keyboard.bindings]]
+chars = "\u000Ez"          # Send Ctrl+E then 'z'
+key = "Z"                  # Triggered by Command+Z
+mods = "Command"           # Toggle tmux pane zoom
+
+[[keyboard.bindings]]
+chars = "\u000Ep"          # Send Ctrl+E then 'p'
+key = "LBracket"           # Triggered by Command+[
+mods = "Command"           # Previous tmux window
+
+[[keyboard.bindings]]
+chars = "\u000En"          # Send Ctrl+E then 'n'
+key = "RBracket"           # Triggered by Command+]
+mods = "Command"           # Next tmux window
+
+[[keyboard.bindings]]
+chars = "\u000E0"          # Send Ctrl+E then '0'
+key = "Key0"               # Triggered by Command+0
+mods = "Command"           # Jump to tmux window 0
+
+[[keyboard.bindings]]
+chars = "\u000E1"          # Send Ctrl+E then '1'
+key = "Key1"               # Triggered by Command+1
+mods = "Command"           # Jump to tmux window 1
+
+[[keyboard.bindings]]
+chars = "\u000E2"          # Send Ctrl+E then '2'
+key = "Key2"               # Triggered by Command+2
+mods = "Command"           # Jump to tmux window 2
+
+[[keyboard.bindings]]
+chars = "\u000E3"          # Send Ctrl+E then '3'
+key = "Key3"               # Triggered by Command+3
+mods = "Command"           # Jump to tmux window 3
+
+[[keyboard.bindings]]
+chars = "\u000E4"          # Send Ctrl+E then '4'
+key = "Key4"               # Triggered by Command+4
+mods = "Command"           # Jump to tmux window 4
+
+[[keyboard.bindings]]
+chars = "\u000E5"          # Send Ctrl+E then '5'
+key = "Key5"               # Triggered by Command+5
+mods = "Command"           # Jump to tmux window 5
+
+[[keyboard.bindings]]
+chars = "\u000E6"          # Send Ctrl+E then '6'
+key = "Key6"               # Triggered by Command+6
+mods = "Command"           # Jump to tmux window 6
+
+[[keyboard.bindings]]
+chars = "\u000E7"          # Send Ctrl+E then '7'
+key = "Key7"               # Triggered by Command+7
+mods = "Command"           # Jump to tmux window 7
+
+[[keyboard.bindings]]
+chars = "\u000E8"          # Send Ctrl+E then '8'
+key = "Key8"               # Triggered by Command+8
+mods = "Command"           # Jump to tmux window 8
+
+[[keyboard.bindings]]
+chars = "\u000Eh"          # Send Ctrl+E then 'h'
+key = "Key9"               # Triggered by Command+9
+mods = "Command"           # Show tmux help or custom action
+
+[[keyboard.bindings]]      # TMUX visual mode 
+chars = "\u000E["          # Command+E -> Ctrl+n then '['
+key = "E"
+mods = "Command"
+
+
+# Color scheme configuration
+# Commented out alternative color schemes preserved below
+
+# Alternative Light Theme (Solarized-like)
+# [colors.bright]
+# black = "#555555"
+# blue = "#1E6FCC"
+# cyan = "#158C86"
+# green = "#216609"
+# magenta = "#5C21A5"
+# red = "#CC3E28"
+# white = "#AAAAAA"
+# yellow = "#B58900"
+
+# [colors.normal]
+# black = "#000000"
+# blue = "#1E6FCC"
+# cyan = "#158C86"
+# green = "#216609"
+# magenta = "#5C21A5"
+# red = "#CC3E28"
+# white = "#AAAAAA"
+# yellow = "#B58900"
+
+# [colors.primary]
+# background = "#F2EEDE"
+# foreground = "#000000"
+
+# Black Theme
+[colors.primary]
+background = "#000000"  # Black background
+foreground = "#ffffff"  # White foreground text
+
+[colors.normal]
+black = "#000000"    # Black
+red = "#ff5555"      # Light red
+green = "#50fa7b"    # Light green
+yellow = "#f1fa8c"   # Light yellow
+blue = "#8be9fd"     # Light blue
+magenta = "#ff79c6"  # Light magenta
+cyan = "#8be9fd"     # Light cyan
+white = "#ffffff"    # White
+
+[colors.bright]
+# black = "#44475a"    # Dark grey
+# black = "#6272a4"    # Dark grey
+black = "#9bace0"    # Dark grey
+red = "#ff5555"      # Light red
+green = "#50fa7b"    # Light green
+yellow = "#f1fa8c"   # Light yellow
+blue = "#8be9fd"     # Light blue
+magenta = "#ff79c6"  # Light magenta
+cyan = "#8be9fd"     # Light cyan
+white = "#ffffff"    # White
+
+[colors.selection]
+text = "#000000"        # Text selected in terminal
+background = "#f1fa8c"  # Background of the selected text
+
+# Cursor styling
+[colors.cursor]
+cursor = "#FC03FC"      # Cursor color (bright magenta/pink)
+text = "#FFFFFF"        # Text color under cursor (white)

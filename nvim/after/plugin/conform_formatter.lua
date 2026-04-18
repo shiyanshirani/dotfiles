@@ -3,10 +3,10 @@ require("conform").setup({
 		lua = { "stylua" },
 		-- Conform will run multiple formatters sequentially
 		-- python = { "isort", "black" },
-		-- python = { "ruff_format", "ruff_fix" },
-		python = { "yapf" },
+		python = { "ruff_format", "ruff_fix" },
+		-- python = { "yapf" },
 		-- Use a sub-list to run only the first available formatter
-		javascript = { { "prettierd", "prettier" } },
+		-- javascript = { { "prettierd", "prettier" } },
 		html = { "htmlbeautifier" },
 		-- json = { "yq" },
 	},
